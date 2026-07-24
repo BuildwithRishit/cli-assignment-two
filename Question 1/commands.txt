@@ -1,0 +1,23 @@
+Q1 - Commands executed
+
+1. Go into the question folder
+cd Q1_Duplicate_Detection
+
+2. Make the scripts executable
+chmod +x duplicate_manager.sh run_demo.sh
+
+3. Prepare sample submissions and run the duplicate manager
+
+./run_demo.sh
+
+4. View the generated report
+cat report.txt
+
+5. View the SEPARATE error log
+cat errors.log
+
+6. List the unique files that were backed up
+ls -l backup
+
+7. Run the manager directly on any folder:
+./duplicate_manager.sh submissions backup

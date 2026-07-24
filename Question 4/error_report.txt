@@ -1,0 +1,3 @@
+2026-07-24 09:00:07 ERROR Failed to open config file /etc/app/app.conf
+2026-07-24 09:00:11 ERROR Database connection timeout after 30s
+2026-07-24 09:00:17 ERROR Null pointer in request handler /api/user

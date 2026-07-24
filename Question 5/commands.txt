@@ -1,0 +1,30 @@
+Q5 - Commands to execute
+
+1. Go into the question folder
+cd Q5_Vi_Recovery
+
+chmod +x simulate_crash.sh
+./simulate_crash.sh
+# It creates app.conf, makes an unsaved edit, simulates a crash (kill -9),
+# shows the leftover .app.conf.swp, then recovers it with `vim -r`.
+
+
+1. Create / open the config file in vim
+vim app.conf
+#    - press  i  , add a line like:   CRASH_TEST=recovered
+#    - press  Esc   (DO NOT save, do not type :w)
+
+2. Simulate a crash from a SECOND terminal:
+pkill -9 vim
+
+3. Confirm the swap file survived the crash
+ls -a
+
+4. Recover using vi's recovery mode  <-- SCREENSHOT THIS
+vim -r app.conf
+ vim shows "Using swap file ... Recovery completed".
+ Save the recovered buffer and quit:
+ :wq
+
+5. Clean up the swap file afterwards
+rm .app.conf.swp

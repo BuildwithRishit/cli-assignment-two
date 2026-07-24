@@ -1,0 +1,2 @@
+md5sum: submissions/student107_locked.txt: Permission denied
+ERROR: could not checksum 'submissions/student107_locked.txt'

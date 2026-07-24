@@ -1,0 +1,16 @@
+UNIQUE    : submissions/student102_assignment.txt   -> backed up
+DUPLICATE : submissions/student105_assignment.txt   (same content as submissions/student102_assignment.txt)
+UNIQUE    : submissions/student104_assignment.txt   -> backed up
+UNIQUE    : submissions/student103_assignment.txt   -> backed up
+DUPLICATE : submissions/student101_assignment.txt   (same content as submissions/student103_assignment.txt)
+DUPLICATE : submissions/student106_assignment.txt   (same content as submissions/student103_assignment.txt)
+
+================ SUBMISSION PROCESSING REPORT ================
+ Generated on    : Fri Jul 24 00:22:59 IST 2026
+ Submissions dir : submissions
+ Backup dir      : backup
+ -----------------------------------------------------------
+ Files processed : 7
+ Duplicates found: 3
+ Unique backed up: 3
+ Errors logged   : 2

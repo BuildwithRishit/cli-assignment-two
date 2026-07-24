@@ -1,0 +1,8 @@
+>> Extracting ERROR lines from app.log ...
+2026-07-24 09:00:07 ERROR Failed to open config file /etc/app/app.conf
+2026-07-24 09:00:11 ERROR Database connection timeout after 30s
+2026-07-24 09:00:17 ERROR Null pointer in request handler /api/user
+
+>> ERROR count: 3
+>> Report saved to: error_report.txt
+>> INFO lines were suppressed to /dev/null (count only = 5)

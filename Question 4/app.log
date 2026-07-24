@@ -1,0 +1,10 @@
+2026-07-24 09:00:01 INFO  Server started on port 8080
+2026-07-24 09:00:03 INFO  Connected to database pool (size=10)
+2026-07-24 09:00:05 WARN  High memory usage: 82%
+2026-07-24 09:00:07 ERROR Failed to open config file /etc/app/app.conf
+2026-07-24 09:00:09 INFO  Request GET /index handled in 12ms
+2026-07-24 09:00:11 ERROR Database connection timeout after 30s
+2026-07-24 09:00:13 INFO  Request GET /about handled in 8ms
+2026-07-24 09:00:15 WARN  Slow query detected (1.2s) on table orders
+2026-07-24 09:00:17 ERROR Null pointer in request handler /api/user
+2026-07-24 09:00:19 INFO  Cache refreshed successfully

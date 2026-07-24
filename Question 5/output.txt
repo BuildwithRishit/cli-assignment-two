@@ -1,0 +1,29 @@
+>> Simulating system crash: kill -9 on the vim process...
+./simulate_crash.sh: line 33: 33789 Killed: 9               script -q /dev/null vim -X -s keys.in -c 'set directory=.' "$FILE" > /dev/null 2>&1
+
+>> Leftover swap file:
+-rw-r--r--@ 1 arav  staff  12288 Jul 24 00:13 .app.conf.swp
+
+>> Original file on disk (the unsaved change is MISSING here):
+port=8080
+host=localhost
+max_connections=100
+timeout=30
+log_level=info
+
+>> Recovering with:  vim -r app.conf
+
+>> vim recovery messages:
+^D^H^HUsing swap file ".app.conf.swp"^M^M
+Original file "~/Downloads/BITS_CLI_SGA2/Q5_Vi_Recovery/app.conf"^M^M
+Recovery completed. You should check if everything is OK.^M^M
+and run diff with the original file to check for changes)^M^M
+"recovered_app.conf" [New] 6L, 92B written^M^M^M
+
+>> Recovered file (the unsaved CRASH_TEST line is BACK):
+port=8080
+host=localhost
+max_connections=100
+timeout=30
+log_level=info
+CRASH_TEST=recovered

@@ -1,0 +1,16 @@
+Q3 - Commands to execute (run them in this order)
+
+1. Go into the question folder
+cd Q3_File_System_Calls
+
+2. Compile the C program
+gcc -Wall -o employee_records employee_records.c
+
+3. Run it (creates employees.dat, writes/updates/reads records)
+./employee_records
+
+4. Show the binary data file that was created
+ls -l employees.dat
+
+5. (Optional) Inspect the raw bytes to see the 48-byte record boundaries
+xxd employees.dat

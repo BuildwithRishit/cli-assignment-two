@@ -1,0 +1,14 @@
+Q2 - Commands to execute (run them in this order)
+
+1. Go into the question folder
+cd Q2_Process_Management
+
+2. Compile the C program (gcc is clang on macOS; -Wall shows warnings)
+gcc -Wall -o process_manager process_manager.c
+
+3. Run the program
+./process_manager
+
+4. Prove that NO zombie (<defunct>) processes were left behind
+ps aux | grep -w '<defunct>' | grep -v grep
+# (no output = success; there are no zombies)

@@ -1,0 +1,22 @@
+Q4 - Commands to execute
+
+1. Go into the question folder
+cd Q4_Log_Monitoring
+
+2. Make scripts executable
+chmod +x monitor.sh generate_logs.sh extract_errors.sh
+
+3. Extract ERROR lines from the existing log into a separate report
+./extract_errors.sh
+
+4. View the separate report file
+cat error_report.txt
+
+Terminal 1 : start the live monitor (streams new ERROR lines)
+./monitor.sh
+
+Terminal 2 : simulate a running server writing new log lines
+./generate_logs.sh
+
+he core pipeline (what monitor.sh runs) :
+tail -f app.log 2>/dev/null | grep --line-buffered "ERROR" | tee -a error_report.txt
